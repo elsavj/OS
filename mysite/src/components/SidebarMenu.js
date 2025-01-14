@@ -1,4 +1,4 @@
-import './/../assets/css/main.css';
+import '../assets/css/main.css';
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import React from "react";
 import { Link } from 'react-router-dom';

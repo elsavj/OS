@@ -1,12 +1,12 @@
-import './/../assets/css/main.css';
+import '../assets/css/main.css';
 import React from "react";
 import { Link } from 'react-router-dom';
 import SidebarMenu from '../components/SidebarMenu.js';
 
 
-function About() {
+function Homepage() {
   return (
-    <div className="About">
+    <div className="Homepage">
       <head>
         <title>Elsa Vijendran</title>
         <meta charset="utf-8" />
@@ -21,13 +21,13 @@ function About() {
             <div class="inner">
 
               <header id="header">
-                <a  class="logo"><strong>Elsa's Website</strong></a>
+                <a class="logo"><strong>Elsa's Website</strong></a>
               </header>
 
               {/* Content */}
               <section>
                 <header class="main">
-                  <h1>About me</h1>
+                  <h1>Hi, I'm Elsa!</h1>
                 </header>
 
               </section>
@@ -47,4 +47,4 @@ function About() {
   );
 }
 
-export default About;
+export default Homepage;
