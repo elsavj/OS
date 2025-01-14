@@ -2,7 +2,7 @@
   "name": "mysite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://{github-username}.github.io/{repo-name}",
+  "homepage": "http://elsavj.github.io/mysite",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
