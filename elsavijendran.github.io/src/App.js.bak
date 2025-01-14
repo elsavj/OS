@@ -1,0 +1,73 @@
+import './App.css';
+import './assets/css/main.css';
+
+function App() {
+  return (
+    <div className="App">
+      <head>
+        <title>Elsa Vijendran</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+      </head>
+      <body class="is-preload">
+
+        <div id="wrapper">
+
+          <div id="main">
+            <div class="inner">
+
+              <header id="header">
+                <a href="index.html" class="logo"><strong>ELSA VIJENDRAN</strong></a>
+              </header>
+
+              {/* Content */}
+              <section>
+                <header class="main">
+                  <h1>Generic</h1>
+                </header>
+
+              </section>
+            </div>
+          </div>
+
+          {/*Sidebar */}
+          <div id="sidebar">
+            <div class="inner">
+
+              {/*Menu */}
+              <nav id="menu">
+                <header class="major">
+                  <h2>Menu</h2>
+                </header>
+                <ul>
+                  <li><a href="index.html">Homepage</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="experience.html">Experience</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="skills.html">Skills</a></li>
+                  <li><a href="education.html">Education</a></li>
+                </ul>
+              </nav>
+
+              {/*Footer */}
+              <footer id="footer">
+              </footer>
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </body>
+
+
+    </div>
+
+
+
+  );
+}
+
+export default App;
