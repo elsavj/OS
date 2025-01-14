@@ -12,7 +12,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Homepage />}>
           {/* <Route index element={<Homepage />} /> */}
-          <Route path="homepage" element={<Homepage />} />
+          <Route path="mysite" element={<Homepage />} />
           <Route path="about" element={<About />} />
 
           {/* <Route path="blogs" element={<Blogs />} />

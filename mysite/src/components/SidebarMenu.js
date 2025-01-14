@@ -21,7 +21,7 @@ function SidebarMenu() {
               },
             }}
           >
-            <MenuItem component={<Link to="/homepage" />}> Home </MenuItem>
+            <MenuItem component={<Link to="/mysite" />}> Home </MenuItem>
             {/* <MenuItem component={<Link to="/about" />}> About </MenuItem>
             <MenuItem component={<Link to="/experience" />}> Experience </MenuItem>
             <MenuItem component={<Link to="/skills" />}> Skills </MenuItem>
