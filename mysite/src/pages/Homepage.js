@@ -2,48 +2,82 @@ import '../assets/css/main.css';
 import React from "react";
 import { Link } from 'react-router-dom';
 import SidebarMenu from '../components/SidebarMenu.js';
+import DocumentMeta from 'react-document-meta';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    white: '#bfb8b8'
+  },
+});
+
+const elsaOs = "+----------------------------------------------------+\n|,------.,--.    ,---.    ,---.      ,-----.  ,---.  |\n||  .---'|  |   '   .-'  /  O   \    '  .-.  ''   .-' |\n||  `--, |  |   `.  `-. |  .-.  |   |  | |  |`.  `-. |\n||  `---.|  '--..-'    ||  | |  |   '  '-'  '.-'    ||\n|`------'`-----'`-----' `--' `--'    `-----' `-----' |\n+----------------------------------------------------+"
+
+function TextArt({ label, text }) {
+  return (
+    <pre
+      aria-label={label}
+      className="text-art ascii-art"
+    >{text}</pre>
+  );
+}
 
 
 function Homepage() {
   return (
+    // <DocumentMeta {...meta}>
+
     <div className="Homepage">
-      <head>
-        <title>Elsa Vijendran</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-      </head>
-      <body class="is-preload">
+      <body className="is-preload">
 
-        <div id="wrapper">
+        <TextArt
+          text={elsaOs}
+        />
+        <ThemeProvider theme={theme}>
 
-          <div id="main">
-            <div class="inner">
+          <Box component="section" sx={{
+            height: 200,
+            width: 200,
+            my: 4,
+            display: 'flex',
+            alignItems: 'center',
+            gap: 4,
+            p: 2,
+            // border: '2px solid grey',
+            color: '#bfb8b8',
+            flexDirection: 'column'
+          }}>
+            <div>------ MENU ------</div>
+            <table>
+              <tr>
+                <th>
+                  <Button className="navBtn" component={Link} to="/about">
+                    ABOUT
+                  </Button>
+                </th>
+              </tr>
+              <tr>
+                <Button className="navBtn" component={Link} to="/contact">
+                  CONTACT
+                </Button>
+              </tr>
+              <tr>
+                <Button className="navBtn" component={Link} to="/about">
+                  2
+                </Button>
+              </tr>
+            </table>
 
-              <header id="header">
-                <a class="logo"><strong>Elsa's Website</strong></a>
-              </header>
+          </Box>
+        </ThemeProvider>
 
-              {/* Content */}
-              <section>
-                <header class="main">
-                  <h1>Hi, I'm Elsa!</h1>
-                </header>
 
-              </section>
-            </div>
-          </div>
-
-          <SidebarMenu/>
-        </div>
 
       </body>
-
-
     </div>
-
-
-
+    // </DocumentMeta>
   );
 }
 
