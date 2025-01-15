@@ -32,7 +32,7 @@ function Homepage() {
     <div className="Homepage">
       <body className="is-preload">
 
-        <TextArt
+        <TextArt id="asciiTitle"
           text={elsaOs}
         />
         <ThemeProvider theme={theme}>

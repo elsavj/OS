@@ -11,8 +11,16 @@ body {
     font-family: monospace;
     white-space: pre;
     color: #bfb8b8;
-
+    /* animation-name: textAnimate;
+    animation-duration: 4s; */
 }
+
+/* @keyframes textAnimate {F
+    0%   {color: red; }
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+  } */
 
 .navBtn {
     color: #bfb8b8 !important;
